@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
             <img class="logo_principal" src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="Logo du Site Internet">
         </a>
         <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
-            <img aria-controls="mainNav" src="./public/icon/tinify-2022-11-16T10_17_52/Menu .webp" alt="Icone de menu">
+            <img aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
     
@@ -74,41 +74,52 @@
         <h3 class="titre-carrousel">Nos oeuvres du moment</h3>
         <div class="carrousel-a">      
             <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
-                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"></button>
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
                 <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
                                 [...$refs.parent.children]
                                 .find(e=>e.getBoundingClientRect().x>=0)
                                 .id">
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/Lieu.webp" alt="image ecran 1">
+                            <img src="public/img/Rectangle 2.webp" alt="image ecran 1">
                         </figure>
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/Espoir.webp" alt="image ecran 2">
+                            <img src="public/img/Rectangle 3.webp" alt="image ecran 2">
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/Regret.webp" alt="image ecran 3">
+                            <img src="public/img/Rectangle 4.webp" alt="image ecran 3">
                         </figure>
                     </div>
                     <div id="ecran-4" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/Musique-projet 1.webp" alt="image ecran 4">
+                            <img src="public/img/Rectangle 5.webp" alt="image ecran 4">
                         </figure>
                     </div>
                     <div id="ecran-5" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrousel-Livre.jpg" alt="image ecran 5">
+                            <img src="public/img/Rectangle 6.webp" alt="image ecran 5">
                         </figure>
                     </div>
                     <div id="ecran-6" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrousel-Film.jpg" alt="image ecran 6">
+                            <img src="public/img/Rectangle 7.webp" alt="image ecran 6">
                         </figure>
                     </div>
+                    <div id="ecran-7" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Rectangle 8.webp" alt="image ecran 5">
+                        </figure>
+                    </div>
+                    <div id="ecran-8" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Rectangle 9.webp" alt="image ecran 6">
+                        </figure>
+                    </div>
+                    
                 </div>
             </div>
         </div>
