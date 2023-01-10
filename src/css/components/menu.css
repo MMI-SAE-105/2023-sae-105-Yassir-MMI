@@ -17,13 +17,13 @@
 }
 
 .flagfr {
-  position: absolute;
+  
   bottom: 23%;
   right: 28%;
 }
 
 .flaggb {
-  position: absolute;
+  
   bottom: 21.5%;
   left: 28%;
 }
@@ -45,7 +45,8 @@
   background-color: #F0E0E0;
   display: grid;
   place-content: center;
-  z-index: 1;
+  z-index: 2;
+  font-family: 'IM Fell Double Pica SC', serif;
 }
 
 .liste-menu {
@@ -84,6 +85,19 @@ header {
   right: 15px;
   background-color: #F0E0E0;
   cursor: pointer;
+}
+
+.header_texte {
+  padding-bottom: 30px;
+  text-align: left;
+
+}
+
+.menu-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 

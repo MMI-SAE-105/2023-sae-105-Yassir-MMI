@@ -13,17 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+Double+Pica+SC&family=Mukta:wght@200&display=swap" rel="stylesheet">
     </style>
     <style>
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #F0E0E0;
-            display: grid;
-            place-content: center;
-            z-index: 2;
-        }
         .header_menuBtn {
             position: relative;
             z-index: 10;
@@ -50,19 +39,19 @@
             <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
 
             <ul class="liste-menu">
-                <li class="header_texte"><a href="./page_musique.html" style="color: #000000">Accueil</a></li>
-                <li><a href="./page_livre.html" style="color: #000000">Exposition</a></li>
-                <li><a href="./page_serie.html" style="color: #000000">La Série qui résume tout</a></li>
-                <li><a href="./page_lieu.html" style="color: #000000">Honoré Daumier </a></li>
-                <li><a href="./page_espoir.html" style="color: #000000">Gustave Courbet</a></li>
-                <li><a href="./page_regret.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
-                <li><a href="./autres_projets.html" style="color: #000000">Jean-François Millet</a></li>
-                <li><a href="./autres_projets.html" style="color: #000000">Contact</a></li>
+                <li class="header_texte"><a href="index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="expo.hmtl" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="contact.html" style="color: #000000">Contact</a></li>
             </ul>
-            <ul>
+            <div class="menu-flag">
                 <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
-                <a href="./indexGB.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
-            </ul>
+                <a href="EN/index.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </div>
         </nav>         
     </header>
     <main>
@@ -125,19 +114,27 @@
         
 
         <div class="div-article-accueil">
+            <a href="page-honoré.html">
             <h3 class="titre-img-article">Honoré Daumier</h3><img src="public/img/article-accueil-honoré.webp" alt=""><p class="texte-article-accueil">Honoré Victorin Daumier, né le 26 février 1808 à Marseille1 et mort le 10 février 1879 à Valmondois, est un graveur, caricaturiste, peintre et sculpteur français, dont les œuvres</p>
+            </a>
         </div>
         
         <div class="div-article-accueil">
+            <a href="page-camille.html">
             <h3 class="titre-img-article">Jean-Baptiste Camille Corot</h3><img src="public/img/article-accueil-camille.webp" alt=""><p class="texte-article-accueil">Jean-Baptiste Camille Corot, né le 16 juillet 1796 à Paris où il est mort le 22 février 1875, est un peintre et graveur français.</p>
+            </a>
         </div class="div-article-accueil">
         
         <div class="div-article-accueil">
+            <a href="page-courbet.html">
             <h3 class="titre-img-article">Gustave Courbet</h3><img src="public/img/article-accueil-courbet.webp" alt=""><p class="texte-article-accueil">Gustave Courbet, né le 10 juin 1819 à Ornans (Doubs) et mort le 31 décembre 1877 à La Tour-de-Peilz (Suisse), est un peintre et sculpteur français, chef de file du courant réaliste.</p>
+            </a>
         </div>
         
         <div class="div-article-accueil">
+            <a href="page-millet.html">
             <h3 class="titre-img-article">Jean-François Millet</h3><img src="public/img/article acticle-millet.webp" alt=""><p class="texte-article-accueil">Jean-François Millet (4 octobre 1814 - 20 janvier 1875) est un artiste-peintre réaliste, pastelliste, graveur et dessinateur français du XIXe siècle, l’un des fondateurs de l’école de Barbizon. </p>
+            </a>
         </div>
 
 
@@ -158,9 +155,10 @@
                     <li><a class="footer__menu-item" href="a-propos-FR.html">Exposition</a></li>
                 </ul>
             </nav>
+            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
         </div>
         <div class="footer__description">
-            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
+            
 
             <hr>
     

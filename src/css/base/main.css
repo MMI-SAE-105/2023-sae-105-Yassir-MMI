@@ -29,7 +29,7 @@ p {
 }
 
 a {
-  text-decoration: non;
+  text-decoration: none;
 }
 
 a:hover {
@@ -175,23 +175,24 @@ figcaption {
   margin-top: 2rem;
   font-size: 15px;
   margin-left: 73%;
-  color: #0C3153;
+  color: #A48E69;
   display: block;
   background-color: #ffffff;
   border-radius: 18px;
-  border: 1px double #D9D9D9;
+  border: 1px double #A48E69;
   text-align: center;
   cursor: pointer;
 }
 
 .contact__form-label{
   display: block;
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact__form-input{
   width: 100%;
   margin-bottom: 1.3rem;
+  border: 1px double #A48E69;
 }
 
 .titre-contact {
