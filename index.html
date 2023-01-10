@@ -11,12 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,500;1,500&family=Karma:wght@400;500&family=Kdam+Thmor+Pro&family=Laila:wght@400;500&family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <style>@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,500;1,500&family=Karma:wght@400;500&family=Kdam+Thmor+Pro&family=Laila:wght@400;500&family=Lato:ital,wght@0,700;1,700&display=swap');
-        font-family: 'K2D', sans-serif;
-        font-family: 'Karma', serif;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-family: 'Laila', sans-serif;
-        font-family: 'Lato', sans-serif;
     </style>
     <style>
         .menu {
@@ -28,6 +22,7 @@
             background-color: #F0E0E0;
             display: grid;
             place-content: center;
+            z-index: 2;
         }
         .header_menuBtn {
             position: relative;
@@ -41,19 +36,20 @@
 </head>
 <body>
     <header>
-        <a href="./index.html">
-            <img class="logo_principal" src="public/icon/tinify-2022-11-16T10_17_52/Logo DOTCWORLD 1.webp" alt="Logo du Site Internet">
-        </a>
-        <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
-            <img aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
-        </button>
+        <div class="menu-header">
+            <a href="./index.html">
+                <img class="logo_principal" src="public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            </a>
+            <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="logo-menu" aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
     
-            <button class="icon_cross_menu imgcross" @click="menuIsOpen = ! menuIsOpen">
-                <img class="icon_cross_menu" src="/public/icon/tinify-2022-11-16T10_17_52/croix.webp" alt="Icone croix pour quitter le menu">
-            </button>
-            <h1 class="textmenu">Menu</h1>
-            <ul>
+
+            <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
+
+            <ul class="liste-menu">
                 <li class="header_texte"><a href="./page_musique.html" style="color: #000000">Accueil</a></li>
                 <li><a href="./page_livre.html" style="color: #000000">Exposition</a></li>
                 <li><a href="./page_serie.html" style="color: #000000">La Série qui résume tout</a></li>
@@ -63,15 +59,14 @@
                 <li><a href="./autres_projets.html" style="color: #000000">Jean-François Millet</a></li>
                 <li><a href="./autres_projets.html" style="color: #000000">Contact</a></li>
             </ul>
-            <hr>
             <ul>
-                <a href="./index.html"><img class="flagfr" src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="Icone pour passer dans la langue francaise"></a>
-                <a href="./indexGB.html"><img class="flaggb" src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="Icone pour passer dans la langue anglaise"></a>
+                <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="./indexGB.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
             </ul>
         </nav>         
     </header>
     <main>
-        <h3 class="titre-carrousel">Nos oeuvres du moment</h3>
+        <h2 class="titre-carrousel">Nos oeuvres du moment</h2>
         <div class="carrousel-a">      
             <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
                 <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
@@ -118,11 +113,15 @@
                         <figure>
                             <img src="public/img/Rectangle 9.webp" alt="image ecran 6">
                         </figure>
-                    </div>
-                    
+                    </div>   
                 </div>
             </div>
         </div>
+        <h3 class="titre-section-article">Nos prochaines Exposition</h3>
+        <p class="texte-hat-article">la future exposition aura lieu entre 13 avril au 23 juin 2021 aux Fondation Cartier de Paris</p>
+
+        <h2 class="titre-section-article">Artiste de notre prochaine Exposition</h2>
+
 
 
     </main>
