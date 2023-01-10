@@ -32,9 +32,9 @@
   display: flex;
 }
 
-
 .btndumenu{
   border: none;
+  background-color: #F7F1E9;
 }
 .menu {
   position: fixed;
@@ -45,4 +45,8 @@
   background-color: #af9e9e;
   display: grid;
   place-content: center;
+}
+
+header {
+  background-color: #F0E0E0;
 }
