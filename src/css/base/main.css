@@ -1,7 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Playfair Display', serif;
+  font-family: 'IM Fell DW Pica', serif;
   line-height: 1.5;
   background-color: #F0E0E0;
 }
@@ -12,19 +10,20 @@ video {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 28px;
 
 }
 
 p {
+  font-family: 'Mukta', sans-serif;
   margin-bottom: 10px;
   margin: 0 20px;
 }
@@ -40,13 +39,13 @@ a:hover {
 /*carrousel */
 .titre-carrousel{
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
 
 }
 
 .titre-section-article {
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: 100;
@@ -55,19 +54,35 @@ a:hover {
 /*section article accueil */
 
 .texte-article-accueil { 
-  color: #0C3153;
+  color: #000000;
 }
 
 .texte-article-accueil {
-  color: #0C3153;
+  color: #000000;
+  font-size: 15px;
 }
 
 .titre-article-accueil {
-  color: #0C3153;
+  color: #000000;
   text-decoration: underline;
   text-align: center;
   margin: 0;
 }
+
+.titre-img-article {
+  font-family: 'IM Fell Double Pica SC', serif;
+  text-decoration: underline;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+}
+
+.div-article-accueil {
+  background-color: #E5D5BE;
+  border-radius: 50%;
+  padding-bottom: 30px;
+}
+
 
 .img-article-accueil {
   margin: 0 20p 0 20px;
@@ -114,6 +129,7 @@ a:hover {
 
 .texte-article{
   font-size: 15px;
+  font-family: 'Mukta', sans-serif;;
 }
 
 .texte-hat-article{
@@ -121,7 +137,8 @@ a:hover {
 }
 
 .titre-article{
-  font-size: 26px;
+  font-size: 30px;
+  font-family: 'IM Fell Double Pica SC', serif;
   text-decoration: underline;
   text-underline-position: under;
   font-weight: 100;
@@ -134,7 +151,7 @@ a:hover {
   text-underline-position: under;
   font-weight: 100;
   margin: 0 20px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -146,7 +163,7 @@ figcaption {
 }
 
 .signature {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 25;
   text-align:right;
   right: 0;

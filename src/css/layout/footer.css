@@ -1,5 +1,5 @@
 .footer {
-    background-color: #152C46;
+    background-color: #D9D9D9;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,7 +7,7 @@
     padding: var(--space2x) var(--space3x);
     justify-content: space-between;
     margin-top: var(--space6x);
-    color: #ffffff;
+    color: #000000;
     border: 5px;
     border: #ffffff;
     list-style: none;
@@ -15,13 +15,24 @@
 
  .list-unstyled {
     list-style: none;
-    color: #ffffff;
+    color: #000000;
  } 
 
 .footer__lien_title {
     text-decoration: none;
     list-style-type: none;
+    
   }
+.footer__lien_title img {
+  width: 90%;
+}
+
+.footer-align {
+  margin: 0 20px;
+  display: flex;
+  padding-top: 10px;
+}
+
   
   .footer__title {
     font-family: var(--font-logo);
