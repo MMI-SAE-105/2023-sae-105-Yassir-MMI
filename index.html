@@ -25,7 +25,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-color: #af9e9e;
+            background-color: #F0E0E0;
             display: grid;
             place-content: center;
         }
@@ -54,27 +54,65 @@
             </button>
             <h1 class="textmenu">Menu</h1>
             <ul>
-                <li class="header_text"><a href="./page_musique.html" style="color: #000000">Une musique interessante</a></li>
-                <li><a href="./page_livre.html" style="color: #000000">Le livre pour l'environnement</a></li>
+                <li class="header_texte"><a href="./page_musique.html" style="color: #000000">Accueil</a></li>
+                <li><a href="./page_livre.html" style="color: #000000">Exposition</a></li>
                 <li><a href="./page_serie.html" style="color: #000000">La Série qui résume tout</a></li>
-                <li><a href="./page_lieu.html" style="color: #000000">Le lieu le plus inégalitaire du monde</a></li>
-                <li><a href="./page_espoir.html" style="color: #000000">Un grand Espoirs de ce monde</a></li>
-                <li><a href="./page_regret.html" style="color: #000000">Un Regret de cette génération</a></li>
-                <li><a href="./autres_projets.html" style="color: #000000">Autres Projets</a></li>
+                <li><a href="./page_lieu.html" style="color: #000000">Honoré Daumier </a></li>
+                <li><a href="./page_espoir.html" style="color: #000000">Gustave Courbet</a></li>
+                <li><a href="./page_regret.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li><a href="./autres_projets.html" style="color: #000000">Jean-François Millet</a></li>
+                <li><a href="./autres_projets.html" style="color: #000000">Contact</a></li>
             </ul>
             <hr>
-            <ul class="ululul">
-                <a href="./glossaire.html" style="color: #000000" class="gac">Glossaire</a>
-                <a href="./à_propos.html" style="color: #000000" class="gac">À propos</a>
-                <a href="./page_contact.html" style="color: #000000" class="gac">Contact</a>
-            </ul>
             <ul>
-                <a href="./index.html"><img class="flag_fr" src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="Icone pour passer dans la langue francaise"></a>
-                <a href="./indexGB.html"><img class="flag_gb" src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="Icone pour passer dans la langue anglaise"></a>
+                <a href="./index.html"><img class="flagfr" src="./public/icon/tinify-2022-11-16T10_17_52/FR.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="./indexGB.html"><img class="flaggb" src="./public/icon/tinify-2022-11-16T10_17_52/GB.webp" alt="Icone pour passer dans la langue anglaise"></a>
             </ul>
         </nav>         
     </header>
     <main>
+        <h3 class="titre-carrousel">Nos oeuvres du moment</h3>
+        <div class="carrousel-a">      
+            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"></button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                                [...$refs.parent.children]
+                                .find(e=>e.getBoundingClientRect().x>=0)
+                                .id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Lieu.webp" alt="image ecran 1">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Espoir.webp" alt="image ecran 2">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Regret.webp" alt="image ecran 3">
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Musique-projet 1.webp" alt="image ecran 4">
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/carrousel-Livre.jpg" alt="image ecran 5">
+                        </figure>
+                    </div>
+                    <div id="ecran-6" class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/carrousel-Film.jpg" alt="image ecran 6">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
     <footer>
