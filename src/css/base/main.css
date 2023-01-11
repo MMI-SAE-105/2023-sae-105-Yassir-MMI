@@ -258,3 +258,25 @@ figcaption {
   font-size: 17px;
   text-decoration: underline;
 }
+
+/*frise*/
+.div-frise {
+  display: flex;
+}
+
+.texte-frise {
+  flex: 2;
+  font-size: 22px;
+  font-family: 'IM Fell DW Pica', serif;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.img-frise {
+  flex: 1;
+  width: 20%;
+}
+
+.div-frise: {
+  flex-direction: column-reverse;
+}

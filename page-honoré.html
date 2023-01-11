@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen:false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+Double+Pica+SC&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-header">
+            <a href="./index.html">
+                <img class="logo_principal" src="public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            </a>
+            <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="logo-menu" aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
+            </button>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+    
+
+            <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
+
+            <ul class="liste-menu">
+                <li class="header_texte"><a href="index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="expo.html" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="contact.html" style="color: #000000">Contact</a></li>
+            </ul>
+            <div class="menu-flag">
+                <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="EN/index.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </div>
+        </nav>         
+    </header>
+    
+    <main>
+
+        <h1 class="titre-contact">Un renseignement ? <br>Une demande ?, une question ?</h1>
+
+        <p class="texte-hat-article">Pour toutes informations supplémentaire, il est conseillé consulter nos condition d’utilisation.</p>
+        <br>
+        <form action="#">
+            <div >
+              <label for="name" class="contact__form-label">Nom:</label>
+              <input type="text" name="name" id="name" class="contact__form-input" placeholder="Renseignez votre Nom">
+            </div>
+            <div>
+              <label for="email" class="contact__form-label">Email:</label>
+              <input type="email" name="email" id="email" class="contact__form-input" placeholder="Entrez votre adresse électronique">
+            </div>
+            <div>
+              <label for="message" class="contact__form-label">Message:</label>
+              <textarea id="message" name="message" rows="8" class="contact__form-input" placeholder="Entrez votre Message"></textarea>
+            </div>
+            <button class="contact__form-button" type="submit">Envoyer</button>
+        </form>
+
+        <h2 class="titre-section-article">il est aussi possible de nous contacter ici</h2>
+
+        <p class="texte-hat-article texte-contact">04 86 12 36 46</p>
+        <p class="texte-hat-article texte-contact">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <p class="texte-hat-article texte-contact">yassir.ouadghiri@edu.univ-fcomte.fr</p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-align">
+            <a class="footer__lien_title" href="index.html" style="flex: 1;">
+                <img src="public/img/logo-Expo.webp" alt="">
+            </a> 
+            <p style="flex: 1;">Yassir Ouadghiri <br> MMi1 TD B2</p>
+        </div>
+        <div class="footer-align">
+            <nav class="footer__menu">
+                <ul class="list-unstyled">
+                    <li><a class="footer__menu-item" href="index-FR.html">Accueil</a></li>
+                    <li><a class="footer__menu-item" href="contact-FR.html">Contact</a></li>
+                    <li><a class="footer__menu-item" href="a-propos-FR.html">Exposition</a></li>
+                </ul>
+            </nav>
+            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
+        </div>
+        <div class="footer__description">
+            
+
+            <hr>
+    
+            <a class="footer__link" href="mailto:yassir.ouadghiri@edu.univ-fcomte.fr">yassir.ouadghiri@edu.univ-fcomte.fr</a>
+            
+            <p><em>Ceci est une maquette réalisé dans le cadre d’un exercice pédagoquide aux département MMI de Montbéliard.</em></p>
+        </div>
+
+    </footer>
+</body>
+</html>
