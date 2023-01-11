@@ -301,14 +301,14 @@ figcaption {
 .frise {
   width: 200px;
   justify-content: center;
-  border-left: 7px solid #DE1111;
+  border-left: 7px solid #A48E69;
   position: relative;
   margin-left: 5%;
 }
 .flechefrise {
   width: 32px;
   height: 20px;
-  background-color: #DE1111;
+  background-color: #A48E69;
   clip-path: polygon(100% 0, 0 0, 50% 100%);
   position: absolute;
   bottom: -20px;
@@ -319,7 +319,7 @@ figcaption {
   display: block;
   height: 5px;
   width: 70px;
-  background-color: #DE1111;
+  background-color: #A48E69;
   position: absolute;
   left: 0;
   top: 50%;
