@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen:false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+Double+Pica+SC&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-header">
+            <a href="./index.html">
+                <img class="logo_principal" src="public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            </a>
+            <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="logo-menu" aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
+            </button>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+    
+
+            <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
+
+            <ul class="liste-menu">
+                <li class="header_texte"><a href="index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="expo.hmtl" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="contact.html" style="color: #000000">Contact</a></li>
+            </ul>
+            <div class="menu-flag">
+                <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="EN/index.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </div>
+        </nav>         
+    </header>
+    
+    <main>
+
+        <h1 class="titre-article">Mouvement Artistique Réalisme</h1>
+        <p class="texte-article">Le réalisme est un mouvement artistique apparu en France et en Grande-Bretagne au milieu du xixe siècle, qui, affirmant sa différence quant au romantisme, se caractérise par une quête du réel, une représentation brute de la vie quotidienne et l'exploration de thèmes sociétaux. Le réalisme n'est pas une tentative d'imitation servile du réel, et ne se limite pas à la peinture.</p>
+        
+        <figure role="figure">
+            <img class="img-article" src="public/img/Mouv-Realisme.webp" alt="image d'illustration du réalisme">
+            <figcaption>
+                <em>Image d’illustration, du mouvement artistique du Réalisme</em>
+            </figcaption>
+        </figure>
+
+        <h3 class="titre-mouvement">Mouvement du Réalisme</h3>
+        <p class="texte-article">L'année 1836 marque un arrêt dans la fortune de l'art romantique : une Scène d'Hamlet d'Eugène Delacroix est refusée au Salon de peinture et de sculpture. Quelques années plus tard, le peintre dira : « Voilà trente ans que je suis livré aux bêtes »2.</p>
+        <p class="texte-article">Au sortir du Salon de 1846, Charles Baudelaire écrit : « Académisme, idéalisme, idéalisation. La vérité dans l'art et la couleur locale en ont égaré beaucoup d'autres. Le réalisme avait existé longtemps avant cette grande bataille (…) Le romantisme n'est précisément ni dans le choix des sujets ni dans la vérité exacte, mais dans la manière de sentir »3. Ainsi, le terme « réalisme », au sens d'une conception esthétique selon laquelle le créateur décrit la réalité sans l'idéaliser — ce qui, en soi, est aussi un idéal —, va s'imposer dans la langue française peu avant le milieu du XIXe siècle et le débat conceptuel entre les différentes manières de représenter idéalement ce qui existe est antérieure à l'émergence du mouvement. Pour autant, et comme l'exprime Baudelaire, l'académisme et l'école romantique portent eux aussi et chacun à leurs manières, un idéal.</p>
+        <p class="texte-article">Influencé entre autres par Delacroix, Géricault et Constable, se liant d'amitié avec Baudelaire, engagé politiquement car marqué par la révolution de 1848, le peintre Gustave Courbet introduit une rupture radicale : il emploie le terme « réalisme » pour désigner sa propre peinture en 1855N 1, en marge de l'exposition universelle de Paris4. Cette exposition dissidente qu'il intitule « Le Réalisme, par Gustave Courbet », constitue un manifeste et déclenche une vive polémique dans les journaux.</p>
+        <p class="signature">Yassir Ouadghiri, <br>le 27/09/22 à Montbéliard </p>
+
+        <h2 class="titre-section-article">Frise Chronologique</h2>
+        <img src="public/img/frise.jpg" alt="Frise chronologique d'auteur acteur du mouvement artistique du Réalisme">
+    </main>
+
+    <footer class="footer">
+        <div class="footer-align">
+            <a class="footer__lien_title" href="index.html" style="flex: 1;">
+                <img src="public/img/logo-Expo.webp" alt="">
+            </a> 
+            <p style="flex: 1;">Yassir Ouadghiri <br> MMi1 TD B2</p>
+        </div>
+        <div class="footer-align">
+            <nav class="footer__menu">
+                <ul class="list-unstyled">
+                    <li><a class="footer__menu-item" href="index-FR.html">Accueil</a></li>
+                    <li><a class="footer__menu-item" href="contact-FR.html">Contact</a></li>
+                    <li><a class="footer__menu-item" href="a-propos-FR.html">Exposition</a></li>
+                </ul>
+            </nav>
+            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
+        </div>
+        <div class="footer__description">
+            
+
+            <hr>
+    
+            <a class="footer__link" href="mailto:yassir.ouadghiri@edu.univ-fcomte.fr">yassir.ouadghiri@edu.univ-fcomte.fr</a>
+            
+            <p><em>Ceci est une maquette réalisé dans le cadre d’un exercice pédagoquide aux département MMI de Montbéliard.</em></p>
+        </div>
+
+    </footer>
+</body>
+</html>
