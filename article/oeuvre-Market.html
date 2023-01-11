@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen:false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+Double+Pica+SC&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-header">
+            <a href="/index.html">
+                <img class="logo_principal" src="/public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            </a>
+            <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="logo-menu" aria-controls="mainNav" src="/public/img/menu-h.webp" alt="Icone de menu">
+            </button>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+    
+
+            <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
+
+            <ul class="liste-menu">
+                <li class="header_texte"><a href="/index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="/expo.html" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="/realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="/page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="/page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="/page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="/page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="/contact.html" style="color: #000000">Contact</a></li>
+            </ul>
+            <div class="menu-flag">
+                <a href="./index.html"><img class="flagfr" src="/public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="EN/index.html"><img class="flaggb" src="/public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </div>
+        </nav>         
+    </header>
+    
+    <main>
+
+        <h1 class="titre-article">Returning from the market </h1>
+        <p class="texte-hat-article">L'artiste a changé peut-être délibérément les proportions des personnages pour mettre en évidence leurs têtes et leurs mains et pour les rapprocher de l'idéal de la beauté de cette époque.</p>
+        
+        <figure role="figure">
+            <img class="img-article" src="/public/img/image 12.webp" alt="Image d’illustration de l'oeuvre présenté">
+            <figcaption>
+                <em>Image d’illustration, de l'oeuvre présenté</em>
+            </figcaption>
+        </figure>
+
+        <p class="texte-article">Probablement achevée en 1506, la pièce présente un portrait d’une femme assise dans un paysage imaginaire. Rendu de la même manière que les représentations de la Renaissance de la Vierge Marie, la pièce présente une figure féminine</p>
+        <p class="texte-article">Elle est représentée assise dans une loggia, ou une pièce avec au moins un côté ouvert. Derrière elle se trouve un paysage brumeux et apparemment isolé imaginé par l’artiste et peint à l’aide de sfumato, une technique résultant en des formes “sans lignes ni bordures, à la manière de la fumée ou au-delà du plan de mise au point”.</p>
+        <p class="signature">Yassir Ouadghiri, <br>
+            le 27/09/22 à Montbéliard </p>
+
+        <h2 class="titre-section-article">D'autres oeuvres du même artiste</h2>
+        <div class="div-article-accueil">
+            <a href="/article/oeuvre-Thiers.html">
+            <h3 class="titre-img-article">Thiers. The Prompter</h3><img src="/public/img/Rectangle 5.webp" alt=""><p class="texte-article-accueil">Alors que le monde a vu beaucoup de peintures et d'œuvres d'art impressionnantes, il faut noter que parmi elles il y a celles qui sont restées intemporelles.</p>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-align">
+            <a class="footer__lien_title" href="index.html" style="flex: 1;">
+                <img src="/public/img/logo-Expo.webp" alt="">
+            </a> 
+            <p style="flex: 1;">Yassir Ouadghiri <br> MMi1 TD B2</p>
+        </div>
+        <div class="footer-align">
+            <nav class="footer__menu">
+                <ul class="list-unstyled">
+                    <li><a class="footer__menu-item" href="index-FR.html">Accueil</a></li>
+                    <li><a class="footer__menu-item" href="contact-FR.html">Contact</a></li>
+                    <li><a class="footer__menu-item" href="a-propos-FR.html">Exposition</a></li>
+                </ul>
+            </nav>
+            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
+        </div>
+        <div class="footer__description">
+            
+
+            <hr>
+    
+            <a class="footer__link" href="mailto:yassir.ouadghiri@edu.univ-fcomte.fr">yassir.ouadghiri@edu.univ-fcomte.fr</a>
+            
+            <p><em>Ceci est une maquette réalisé dans le cadre d’un exercice pédagoquide aux département MMI de Montbéliard.</em></p>
+        </div>
+
+    </footer>
+</body>
+</html>
