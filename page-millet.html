@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen:false }">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+Double+Pica+SC&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+          .noscroll,
+          .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-header">
+            <a href="./index.html">
+                <img class="logo_principal" src="public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            </a>
+            <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
+                <img class="logo-menu" aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
+            </button>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+    
+
+            <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
+
+            <ul class="liste-menu">
+                <li class="header_texte"><a href="index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="expo.html" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="contact.html" style="color: #000000">Contact</a></li>
+            </ul>
+            <div class="menu-flag">
+                <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="EN/index.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+            </div>
+        </nav>         
+    </header>
+    
+    <main>
+        <h1 class="titre-article">Honoré Daumier</h1>
+        <p class="texte-article">L’arrivée de Gustave Courbet dans le paysage artistique français bouleverse les codes établis dans le monde de la peinture depuis plusieurs siècles. Malgré les règles dictées par l’Académie des Beaux-Arts aux artistes, d’autres courants s’épanouissent au 19ème siècle comme le Romantisme avec, par exemple, Le Radeau de la Méduse de Théodore Géricault en 1819 (Paris, Musée du Louvre). L’ambition de Courbet de réformer la peinture l’amène à initier un courant artistique nouveau : le Réalisme.</p>
+
+        <figure role="figure">
+            <img class="img-article" src="public/img/auteur-Honoré.webp" alt="illustration de Honoré Daumier">
+            <figcaption>
+                <em>
+                    image d’illustration de l’artiste
+                </em>
+            </figcaption>
+        </figure>
+
+        <p class="texte-article">Toute sa vie, il surprend et parfois choque le monde de l’art, ses représentants et ses amateurs par son regard nouveau sur le monde et sur la société.</p>
+        
+        <h2 class="titre-section-article">Quelques de ses oeuvres</h2>
+    
+        <div class="div-article-accueil">
+            <a href="/article/oeuvre-Thiers.html">
+            <h3 class="titre-img-article">Thiers. The Prompter</h3><img src="public/img/Rectangle 5.webp" alt=""><p class="texte-article-accueil">Alors que le monde a vu beaucoup de peintures et d'œuvres d'art impressionnantes, il faut noter que parmi elles il y a celles qui sont restées intemporelles.</p>
+            </a>
+        </div>
+        
+        <div class="div-article-accueil">
+            <a href="page-camille.html">
+            <h3 class="titre-img-article">Returning from the market</h3><img src="public/img/Rectangle 7.webp" alt=""><p class="texte-article-accueil">Cependant, lorsque l'on parle des peintures les plus célèbres du monde, il est presque impossible de le faire sans parler des beaux-arts de la renaissance </p>
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-align">
+            <a class="footer__lien_title" href="index.html" style="flex: 1;">
+                <img src="public/img/logo-Expo.webp" alt="">
+            </a> 
+            <p style="flex: 1;">Yassir Ouadghiri <br> MMi1 TD B2</p>
+        </div>
+        <div class="footer-align">
+            <nav class="footer__menu">
+                <ul class="list-unstyled">
+                    <li><a class="footer__menu-item" href="index-FR.html">Accueil</a></li>
+                    <li><a class="footer__menu-item" href="contact-FR.html">Contact</a></li>
+                    <li><a class="footer__menu-item" href="a-propos-FR.html">Exposition</a></li>
+                </ul>
+            </nav>
+            <img class="footer__logo" src="/public/img/logo-mmi.webp" alt="Logo MMi">
+        </div>
+        <div class="footer__description">
+            
+
+            <hr>
+    
+            <a class="footer__link" href="mailto:yassir.ouadghiri@edu.univ-fcomte.fr">yassir.ouadghiri@edu.univ-fcomte.fr</a>
+            
+            <p><em>Ceci est une maquette réalisé dans le cadre d’un exercice pédagoquide aux département MMI de Montbéliard.</em></p>
+        </div>
+
+    </footer>
+</body>
+</html>
