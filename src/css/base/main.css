@@ -1,3 +1,7 @@
+main {
+  padding-bottom: 15px;
+}
+
 body {
   font-family: 'IM Fell DW Pica', serif;
   line-height: 1.5;
@@ -146,6 +150,7 @@ a:hover {
   margin: 0 20px;
   text-align: center;
   padding-bottom: 15px;
+  padding-top: 5px;
 }
 
 .sous-titre-article{
@@ -176,6 +181,24 @@ figcaption {
   margin: 0 20px;
   text-decoration: underline;
   padding: 7px;
+}
+
+.liste-tarif {
+  padding-left: 108px;
+  font-size: 20px;
+}
+
+.bouton-tarif {
+  background-color: #A48E69;
+  border-radius: 27% ;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  margin: 0 34%;
+  font-size: 30px;
+}
+
+.main-tarif {
+  padding-bottom: 30px;
 }
 
 /* page contact */
