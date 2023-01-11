@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +26,11 @@
 <body>
     <header>
         <div class="menu-header">
-            <a href="./index.html">
-                <img class="logo_principal" src="public/img/logo-Expo.webp" alt="Logo du Site Internet">
+            <a href="/index.html">
+                <img class="logo_principal" src="/public/img/logo-Expo.webp" alt="Logo du Site Internet">
             </a>
             <button class="header_menu btndumenu" @click="menuIsOpen = ! menuIsOpen">
-                <img class="logo-menu" aria-controls="mainNav" src="./public/img/menu-h.webp" alt="Icone de menu">
+                <img class="logo-menu" aria-controls="mainNav" src="/public/img/menu-h.webp" alt="Icone de menu">
             </button>
         </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
@@ -39,18 +39,18 @@
             <img class="logo-menu-f " src="/public/img/x.svg" alt="Icone croix pour quitter le menu" @click="menuIsOpen = ! menuIsOpen">
 
             <ul class="liste-menu">
-                <li class="header_texte"><a href="index.html" style="color: #000000">Accueil</a></li>
-                <li class="header_texte"><a href="expo.html" style="color: #000000">Exposition</a></li>
-                <li class="header_texte"><a href="realimse.html" style="color: #000000">Le Réalisme</a></li>
-                <li class="header_texte"><a href="page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
-                <li class="header_texte"><a href="page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
-                <li class="header_texte"><a href="page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
-                <li class="header_texte"><a href="page-millet.html" style="color: #000000">Jean-François Millet</a></li>
-                <li class="header_texte"><a href="contact.html" style="color: #000000">Contact</a></li>
+                <li class="header_texte"><a href="/index.html" style="color: #000000">Accueil</a></li>
+                <li class="header_texte"><a href="/expo.html" style="color: #000000">Exposition</a></li>
+                <li class="header_texte"><a href="/realimse.html" style="color: #000000">Le Réalisme</a></li>
+                <li class="header_texte"><a href="/page-honoré.html" style="color: #000000">Honoré Daumier </a></li>
+                <li class="header_texte"><a href="/page-courbet.html" style="color: #000000">Gustave Courbet</a></li>
+                <li class="header_texte"><a href="/page-camille.html" style="color: #000000">Jean-Baptiste Camille Corot</a></li>
+                <li class="header_texte"><a href="/page-millet.html" style="color: #000000">Jean-François Millet</a></li>
+                <li class="header_texte"><a href="/contact.html" style="color: #000000">Contact</a></li>
             </ul>
             <div class="menu-flag">
-                <a href="./index.html"><img class="flagfr" src="./public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
-                <a href="EN/index.html"><img class="flaggb" src="./public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
+                <a href="./index.html"><img class="flagfr" src="/public/img/Fr-removebg-preview 1.webp" alt="Icone pour passer dans la langue francaise"></a>
+                <a href="EN/index.html"><img class="flaggb" src="/public/img/uk 1.webp" alt="Icone pour passer dans la langue anglaise"></a>
             </div>
         </nav>         
     </header>
@@ -137,13 +137,11 @@
             </a>
         </div>
 
-
-
     </main>
     <footer class="footer">
         <div class="footer-align">
             <a class="footer__lien_title" href="index.html" style="flex: 1;">
-                <img src="public/img/logo-Expo.webp" alt="">
+                <img src="/public/img/logo-Expo.webp" alt="">
             </a> 
             <p style="flex: 1;">Yassir Ouadghiri <br> MMi1 TD B2</p>
         </div>

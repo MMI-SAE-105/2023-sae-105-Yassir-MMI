@@ -202,6 +202,18 @@ figcaption {
   padding-bottom: 30px;
 }
 
+.text_accordeon{
+  font-family: 'Mukta';
+  color: #000000;
+  font-size: medium;
+  text-decoration: none;
+}
+.text_accordeon1{
+  font-family: 'Mukta';
+  color: #000000;
+  font-size: medium;
+}
+
 /* page contact */
 .contact__form-button {
   padding: 1.2rem;
